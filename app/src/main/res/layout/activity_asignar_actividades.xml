@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F4A261">
+
+    <TextView
+        android:id="@+id/tv_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Volver"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asignar actividades"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Contenedor con scroll para la lista de actividades -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Lista de checkboxes para actividades -->
+            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 1" android:textColor="#FFFFFF"/>
+            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 2" android:textColor="#FFFFFF"/>
+            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 3" android:textColor="#FFFFFF"/>
+            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 4" android:textColor="#FFFFFF"/>
+            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 5" android:textColor="#FFFFFF"/>
+            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 6" android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Sección inferior: DNI y Confirmación -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DNI socio/no socio"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_dni"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Ingrese DNI"
+        android:autofillHints="number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Asignación"
+        android:backgroundTint="#222D3E"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

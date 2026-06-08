@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor principal de la pantalla de menú -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F4A261">
+
+    <!-- Encabezado: Saludo y cierre de sesión -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="48dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Hola, Usuario/Admin"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cerrar_sesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[← Cerrar sesión]"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Escudo del Club Deportivo -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/escudo_logo"
+        android:layout_marginBottom="64dp" />
+
+    <!-- Opciones del menú principal -->
+    <Button
+        android:id="@+id/btn_registrar_socio"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#222D3E"
+        android:text="Registrar nuevo socio"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_asignar_actividad"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#222D3E"
+        android:text="Asignar actividad"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_listar_morosos"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#222D3E"
+        android:text="Listar socios con cuota vencida"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F4A261">
+
+    <TextView
+        android:id="@+id/tv_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Volver"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar socio"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Nombre y Apellido -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nombre y apellido" android:textColor="#FFFFFF"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:hint="Ingrese nombre completo"
+                android:autofillHints="name"
+                android:inputType="textPersonName"/>
+
+            <!-- Edad -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Edad" android:textColor="#FFFFFF"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:hint="Ej: 25"
+                android:autofillHints="phone"
+                android:inputType="number"/>
+
+            <!-- Dirección -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dirección" android:textColor="#FFFFFF"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:hint="Calle Falsa 123"
+                android:autofillHints="postalAddress"
+                android:inputType="textPostalAddress"/>
+
+            <!-- Teléfono -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Teléfono" android:textColor="#FFFFFF"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:hint="Ej: 1122334455"
+                android:autofillHints="phone"
+                android:inputType="phone"/>
+
+            <!-- Tipo de cliente -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tipo de cliente" android:textColor="#FFFFFF"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presentó Apto Físico"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:backgroundTint="#222D3E"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
