@@ -11,15 +11,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoApp">
+
+        <!-- Pantalla de Login configurada como Entry Point (Punto de entrada) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Registro de la pantalla del Menú Principal para habilitar la navegación mediante Intent -->
+        <activity android:name=".MenuPrincipalActivity" />
+        <activity android:name=".RegistrarSocioActivity" />
+        <activity android:name=".AsignarActividadActivity" />
+        <activity android:name=".ListaMorososActivity" />
+        <activity android:name=".CobrarCuotaActivity" />
+        <activity android:name=".FacturaCuotaActivity" />
+        <activity android:name=".CarnetSocioActivity" />
+        <activity android:name=".CobrarActividadActivity" />
+        <activity android:name=".FacturaActividadActivity" />
+
     </application>
 
 </manifest>

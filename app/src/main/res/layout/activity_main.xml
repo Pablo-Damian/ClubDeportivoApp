@@ -6,12 +6,12 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    android:background="#F4A261"> <!-- Color naranja del "Club Deportivo" -->
+    android:background="#84b6f4"> <!-- Color naranja del "Club Deportivo" -->
 
     <!-- Logo/Escudo del "Club Deportivo" -->
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:src="@drawable/escudo_logo"
         android:layout_marginBottom="48dp" />
 

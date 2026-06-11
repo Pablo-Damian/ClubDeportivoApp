@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#F4A261">
+    android:background="#84b6f4">
 
     <TextView
         android:id="@+id/tv_volver"
@@ -27,23 +27,18 @@
 
     <!-- Contenedor con scroll para la lista de actividades -->
     <ScrollView
+        android:contentDescription="Lista de actividades disponibles"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginBottom="16dp">
 
+        <!-- A este contenedor se le agregan los CheckBox dinámicamente desde Kotlin -->
         <LinearLayout
+            android:id="@+id/ll_contenedor_actividades"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <!-- Lista de checkboxes para actividades -->
-            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 1" android:textColor="#FFFFFF"/>
-            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 2" android:textColor="#FFFFFF"/>
-            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 3" android:textColor="#FFFFFF"/>
-            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 4" android:textColor="#FFFFFF"/>
-            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 5" android:textColor="#FFFFFF"/>
-            <CheckBox android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actividad 6" android:textColor="#FFFFFF"/>
         </LinearLayout>
     </ScrollView>
 

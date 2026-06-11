@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#F4A261">
+    android:background="#84b6f4">
 
     <TextView
         android:id="@+id/tv_volver"
@@ -33,6 +33,7 @@
         android:layout_marginBottom="8dp" />
 
     <RadioGroup
+        android:id="@+id/rg_modo_pago"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -40,12 +41,14 @@
         android:padding="16dp">
 
         <RadioButton
+            android:id="@+id/rb_tarjeta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tarjeta o transferencia"
             android:layout_marginBottom="8dp" />
 
         <RadioButton
+            android:id="@+id/rb_efectivo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Efectivo" />
@@ -70,20 +73,12 @@
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/btn_registrar_cobro"
+        android:id="@+id/btn_cobrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrar Cobro"
         android:backgroundTint="#222D3E"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp"/>
-
-    <Button
-        android:id="@+id/btn_mostrar_factura"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mostrar factura"
-        android:backgroundTint="#222D3E"
-        android:textColor="#FFFFFF" />
 
 </LinearLayout>

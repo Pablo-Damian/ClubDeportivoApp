@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Layout para visualización de factura de actividad -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#F4A261">
+    android:background="#84b6f4">
 
-    <!-- Navegación -->
     <TextView
         android:id="@+id/tv_volver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="← Volver"
+        android:text="← Volver al menú"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_marginBottom="16dp" />
@@ -27,7 +25,7 @@
         android:textColor="#FFFFFF"
         android:layout_marginBottom="32dp" />
 
-    <!-- Contenedor blanco para datos de la factura -->
+    <!-- Contenedor del comprobante -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,19 +35,19 @@
         android:layout_marginBottom="48dp">
 
         <TextView
+            android:id="@+id/tv_titulo_comprobante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Comprobante Pago Actividad X"
+            android:text="Comprobante Pago Actividad"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginBottom="16dp"/>
 
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Monto: $XXX.XX"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fecha: dd/mm/aaaa"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ID de pago: 0xxxxxxxx"/>
+        <TextView android:id="@+id/tv_monto" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Monto: $"/>
+        <TextView android:id="@+id/tv_fecha" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fecha: "/>
+        <TextView android:id="@+id/tv_id_pago" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ID de pago: "/>
     </LinearLayout>
 
-    <!-- Acción principal -->
     <Button
         android:id="@+id/btn_descargar_pdf"
         android:layout_width="match_parent"

@@ -4,12 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#F4A261">
+    android:background="#84b6f4">
 
     <TextView
+        android:id="@+id/tv_volver"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="← Volver"
+        android:text="← Volver al menú"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_marginBottom="24dp" />
@@ -24,7 +25,6 @@
         android:textColor="#FFFFFF"
         android:layout_marginBottom="32dp" />
 
-    <!-- Cuadro de la factura -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,14 +34,17 @@
         android:layout_marginBottom="32dp">
 
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Comprobante Pago de Cuota" android:textStyle="bold" android:gravity="center" android:layout_marginBottom="16dp"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Socio: Juan Carlos"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Monto: $XXX.XX"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fecha: dd/mm/aaaa"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Medio de pago: Tarjeta"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ID de pago: 0xxxxxxxx"/>
+
+        <!-- IDs agregados para inyección de datos -->
+        <TextView android:id="@+id/tv_socio" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Socio: "/>
+        <TextView android:id="@+id/tv_monto" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Monto: $"/>
+        <TextView android:id="@+id/tv_fecha" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fecha: "/>
+        <TextView android:id="@+id/tv_medio_pago" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Medio de pago: "/>
+        <TextView android:id="@+id/tv_id_pago" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ID de pago: "/>
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_descargar_pdf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Descargar como PDF"
@@ -50,6 +53,7 @@
         android:layout_marginBottom="8dp"/>
 
     <Button
+        android:id="@+id/btn_ver_carnet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ver carnet de socio"

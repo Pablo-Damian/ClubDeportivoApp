@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#F4A261">
+    android:background="#84b6f4">
 
     <TextView
         android:id="@+id/tv_volver"
@@ -34,6 +34,7 @@
 
     <!-- Se utiliza RadioGroup que agrupa las opciones para que solo se elija una -->
     <RadioGroup
+        android:id="@+id/rg_modo_pago"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -41,12 +42,14 @@
         android:padding="16dp">
 
         <RadioButton
+            android:id="@+id/rb_tarjeta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tarjeta o transferencia"
             android:layout_marginBottom="8dp" />
 
         <RadioButton
+            android:id="@+id/rb_efectivo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Efectivo" />
@@ -60,6 +63,7 @@
         android:layout_marginBottom="8dp" />
 
     <EditText
+        android:id="@+id/et_monto"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:background="#FFFFFF"

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#F4A261">
+    android:background="#84b6f4">
 
     <TextView
         android:id="@+id/tv_volver"
@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar socio"
+        android:text="Registrar Cliente"
         android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -35,72 +35,29 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Nombre y Apellido -->
+            <!-- Se adaptan los campos del diseño original a la estructura formal de la Base de Datos -->
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nombre y apellido" android:textColor="#FFFFFF"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="#FFFFFF"
-                android:layout_marginBottom="16dp"
-                android:padding="8dp"
-                android:hint="Ingrese nombre completo"
-                android:autofillHints="name"
-                android:inputType="textPersonName"/>
+            <EditText android:id="@+id/et_nombre_apellido" android:layout_width="match_parent" android:layout_height="48dp" android:background="#FFFFFF" android:layout_marginBottom="16dp" android:padding="8dp" android:hint="Ej: Juan Pérez" android:autofillHints="name" android:inputType="textPersonName"/>
 
-            <!-- Edad -->
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Edad" android:textColor="#FFFFFF"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="#FFFFFF"
-                android:layout_marginBottom="16dp"
-                android:padding="8dp"
-                android:hint="Ej: 25"
-                android:autofillHints="phone"
-                android:inputType="number"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DNI" android:textColor="#FFFFFF"/>
+            <EditText android:id="@+id/et_dni" android:layout_width="match_parent" android:layout_height="48dp" android:background="#FFFFFF" android:layout_marginBottom="16dp" android:padding="8dp" android:hint="Sin puntos" android:autofillHints="phone" android:inputType="number"/>
 
-            <!-- Dirección -->
-            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dirección" android:textColor="#FFFFFF"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="#FFFFFF"
-                android:layout_marginBottom="16dp"
-                android:padding="8dp"
-                android:hint="Calle Falsa 123"
-                android:autofillHints="postalAddress"
-                android:inputType="textPostalAddress"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fecha de Nacimiento" android:textColor="#FFFFFF"/>
+            <EditText android:id="@+id/et_fecha_nac" android:layout_width="match_parent" android:layout_height="48dp" android:background="#FFFFFF" android:layout_marginBottom="16dp" android:padding="8dp" android:hint="YYYY-MM-DD" android:autofillHints="postalAddress" android:inputType="date"/>
 
-            <!-- Teléfono -->
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Teléfono" android:textColor="#FFFFFF"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="#FFFFFF"
-                android:layout_marginBottom="16dp"
-                android:padding="8dp"
-                android:hint="Ej: 1122334455"
-                android:autofillHints="phone"
-                android:inputType="phone"/>
+            <EditText android:id="@+id/et_telefono" android:layout_width="match_parent" android:layout_height="48dp" android:background="#FFFFFF" android:layout_marginBottom="16dp" android:padding="8dp" android:hint="Ej: 1122334455" android:autofillHints="phone" android:inputType="phone"/>
 
-            <!-- Tipo de cliente -->
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tipo de cliente" android:textColor="#FFFFFF"/>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="#FFFFFF"
-                android:layout_marginBottom="16dp"/>
+            <Spinner android:id="@+id/spinner_tipo" android:layout_width="match_parent" android:layout_height="48dp" android:background="#FFFFFF" android:layout_marginBottom="16dp"/>
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Presentó Apto Físico"
-                android:textColor="#FFFFFF"/>
+            <CheckBox android:id="@+id/cb_apto_fisico" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Presentó Apto Físico" android:textColor="#FFFFFF"/>
 
         </LinearLayout>
     </ScrollView>
 
     <Button
+        android:id="@+id/btn_registrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrar"

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:background="#F4A261">
+    android:background="#84b6f4">
 
     <TextView
         android:id="@+id/tv_volver"
@@ -25,7 +25,7 @@
         android:textColor="#FFFFFF"
         android:layout_marginBottom="32dp" />
 
-    <!-- Tarjeta del carnet (Rectángulo blanco) -->
+    <!-- Tarjeta del carnet -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,36 +35,52 @@
         android:gravity="center_horizontal"
         android:layout_marginBottom="48dp">
 
-        <!-- Espacio para la foto -->
+        <!-- Avatar genérico -->
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="#CCCCCC"
+            android:src="@drawable/avatar"
             android:layout_marginBottom="16dp"
             android:contentDescription="Foto del socio" />
 
         <TextView
+            android:id="@+id/tv_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Juan Carlos"
+            android:text="Nombre"
             android:textStyle="bold"
             android:textSize="18sp"
-            android:textColor="#333333"/>
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"/>
 
         <TextView
+            android:id="@+id/tv_dni"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DNI xxxxxxxx"
-            android:textColor="#555555"/>
+            android:text="DNI: "
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp"/>
 
         <TextView
+            android:id="@+id/tv_ingreso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Socio desde dd/mm/aaaa"
-            android:textColor="#555555"/>
+            android:text="Socio desde: "
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Se agregó el número de carnet que generamos aleatoriamente en la BD -->
+        <TextView
+            android:id="@+id/tv_nro_carnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nº de Carnet: "
+            android:textColor="#555555"
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_imprimir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Imprimir carnet"
