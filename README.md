@@ -26,6 +26,31 @@ Se incorporaron patrones de diseño y buenas prácticas del desarrollo nativo en
 
 ---
 
+## 📂 Estructura/Árbol de Directorios del Proyecto
+A continuación se detalla la ubicación de los componentes arquitectónicos más relevantes del proyecto para facilitar su auditoría:
+
+```text
+📦 ClubDeportivoApp
+ ┣ 📂 app
+ ┃ ┣ 📂 src
+ ┃ ┃ ┣ 📂 androidTest/java/.../clubdeportivoapp   # Pruebas automatizadas (QA)
+ ┃ ┃ ┃ ┗ 📜 DatabaseTest.kt                       # Auditoría de integración SQLite (JUnit4/Espresso)
+ ┃ ┃ ┣ 📂 main
+ ┃ ┃ ┃ ┣ 📜 AndroidManifest.xml                   # Configuración global y Entry Point (Login)
+ ┃ ┃ ┃ ┣ 📂 java/com/example/clubdeportivoapp     # Lógica en Kotlin y Persistencia
+ ┃ ┃ ┃ ┃ ┣ 📜 DbHelper.kt                         # Creación de tablas y datos semilla
+ ┃ ┃ ┃ ┃ ┣ 📜 MainActivity.kt                     # Controlador principal (Login)
+ ┃ ┃ ┃ ┃ ┗ 📜 *Activity.kt                        # Controladores del resto de las pantallas
+ ┃ ┃ ┃ ┣ 📂 res
+ ┃ ┃ ┃ ┃ ┣ 📂 drawable                            # Recursos gráficos
+ ┃ ┃ ┃ ┃ ┃ ┣ 🖼️ escudo_logo.png
+ ┃ ┃ ┃ ┃ ┃ ┗ 🖼️ avatar.png
+ ┃ ┃ ┃ ┃ ┗ 📂 layout                              # Maquetado Front-End
+ ┃ ┃ ┃ ┃   ┗ 📜 activity_*.xml                    # Diseños XML de alta fidelidad (UI/UX)
+```
+
+---
+
 ## 🛣️ Trabajo Futuro y Siguientes Iteraciones (Roadmap)
 Para enmarcar el prototipo dentro de un Producto Mínimo Viable (MVP) funcional, se definieron los alcances de la siguiente etapa de desarrollo:
 
